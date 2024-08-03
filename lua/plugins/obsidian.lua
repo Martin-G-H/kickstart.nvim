@@ -19,7 +19,7 @@ return {
     workspaces = {
       {
         name = 'personal',
-        path = '~/OneDrive - Linköpings universitet/Notes',
+        path = '~/Notes/',
       },
     }, -- see below for full list of options 👇
   },
