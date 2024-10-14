@@ -51,8 +51,13 @@ Clone kickstart.nvim:
 
 <details><summary> Linux and Mac </summary>
 
+HTTPS:
 ```sh
 git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+SSH:
+```sh
+git clone git@github.com:Martin-G-H/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 </details>
@@ -61,19 +66,20 @@ git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HO
 
 If you're using `cmd.exe`:
 
+HTTPS:
 ```
 git clone https://github.com/Martin-G-H/kickstart.nvim.git %userprofile%\AppData\Local\nvim\
 ```
-
+SSH:
 ```
 git clone git@github.com:Martin-G-H/kickstart.nvim.git %userprofile%\AppData\Local\nvim\
 ```
 If you're using `powershell.exe`
-
+HTTPS:
 ```
 git clone https://github.com/Martin-G-H/kickstart.nvim.git $env:USERPROFILE\AppData\Local\nvim\
 ```
-
+SSH:
 ```
 git clone git@github.com:Martin-G-H/kickstart.nvim.git $env:USERPROFILE\AppData\Local\nvim\
 ```
