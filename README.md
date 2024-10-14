@@ -65,10 +65,17 @@ If you're using `cmd.exe`:
 git clone https://github.com/Martin-G-H/kickstart.nvim.git %userprofile%\AppData\Local\nvim\
 ```
 
+```
+git clone git@github.com:Martin-G-H/kickstart.nvim.git %userprofile%\AppData\Local\nvim\
+```
 If you're using `powershell.exe`
 
 ```
 git clone https://github.com/Martin-G-H/kickstart.nvim.git $env:USERPROFILE\AppData\Local\nvim\
+```
+
+```
+git clone git@github.com:Martin-G-H/kickstart.nvim.git $env:USERPROFILE\AppData\Local\nvim\
 ```
 
 </details>
