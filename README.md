@@ -62,96 +62,13 @@ git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HO
 If you're using `cmd.exe`:
 
 ```
-git clone https://github.com/nvim-lua/kickstart.nvim.git %userprofile%\AppData\Local\nvim\
+git clone https://github.com/Martin-G-H/kickstart.nvim.git %userprofile%\AppData\Local\nvim\
 ```
 
 If you're using `powershell.exe`
 
 ```
-git clone https://github.com/nvim-lua/kickstart.nvim.git $env:USERPROFILE\AppData\Local\nvim\
-```
-
-</details>
-
-### Post Installation
-
-Start Neovim
-
-```sh
-nvim
-```
-
-That's it! Lazy will install all the plugins you have. Use `:Lazy` to view
-current plugin status.
-
-Read through the `init.lua` file in your configuration folder for more
-information about extending and exploring Neovim.
-
-### Getting Started
-
-[The Only Video You Need to Get Started with Neovim](https://youtu.be/m8C0Cq9Uv9o)
-
-### Recommended Steps
-
-[Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo
-(so that you have your own copy that you can modify) and then install. You
-can install it on your machine using the methods above.
-
-> **NOTE**
-> Your fork's url will be something like this: `https://github.com/<your_github_username>/kickstart.nvim.git`
-
-#### Examples of adding popularly requested plugins
-
-NOTE: You'll need to uncomment the line in the init.lua that turns on loading custom plugins.
-
-<details>
-  <summary>Adding autopairs</summary>
-
-This will automatically install [windwp/nvim-autopairs](https://github.com/windwp/nvim-autopairs) and enable it on startup. For more information, see documentation for [lazy.nvim](https://github.com/folke/lazy.nvim).
-
-In the file: `lua/custom/plugins/autopairs.lua`, add:
-
-```lua
--- File: lua/custom/plugins/autopairs.lua
-
-return {
-  "windwp/nvim-autopairs",
-  -- Optional dependency
-  dependencies = { 'hrsh7th/nvim-cmp' },
-  config = function()
-    require("nvim-autopairs").setup {}
-    -- If you want to automatically add `(` after selecting a function or method
-    local cmp_autopairs = require('nvim-autopairs.completion.cmp')
-    local cmp = require('cmp')
-    cmp.event:on(
-      'confirm_done',
-      cmp_autopairs.on_confirm_done()
-    )
-  end,
-}
-```
-
-</details>
-<details>
-  <summary>Adding a file tree plugin</summary>
-
-This will install the tree plugin and add the command `:Neotree` for you. For more information, see the documentation at [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim).
-
-In the file: `lua/custom/plugins/filetree.lua`, add:
-
-```lua
-return {
-  "nvim-neo-tree/neo-tree.nvim",
-  version = "*",
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-    "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-    "MunifTanjim/nui.nvim",
-  },
-  config = function ()
-    require('neo-tree').setup {}
-  end,
-}
+git clone https://github.com/Martin-G-H/kickstart.nvim.git $env:USERPROFILE\AppData\Local\nvim\
 ```
 
 </details>
