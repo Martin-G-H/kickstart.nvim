@@ -37,3 +37,6 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set('n', '<leader>bd', '<cmd>bd<CR>', { desc = '[B]uffer [D]elete' })
 vim.keymap.set('n', '<leader>bn', '<cmd>bn<CR>', { desc = '[B]uffer [N]ext' })
 vim.keymap.set('n', '<leader>bp', '<cmd>bp<CR>', { desc = '[B]uffer [P]revious' })
+
+vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Move half screen [U]p and center' })
+vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Move half screen [D]own and center' })
