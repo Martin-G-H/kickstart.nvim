@@ -42,3 +42,4 @@ vim.keymap.set('n', '<leader>bp', '<cmd>bp<CR>', { desc = '[B]uffer [P]revious' 
 
 vim.keymap.set('n', '<C-u>', '<C-u>zz', { desc = 'Move half screen [U]p and center' })
 vim.keymap.set('n', '<C-d>', '<C-d>zz', { desc = 'Move half screen [D]own and center' })
+
